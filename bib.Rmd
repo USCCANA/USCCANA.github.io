@@ -1,0 +1,20 @@
+---
+title: "Publications"
+date: "December 11, 2015"
+output:
+  md_document:
+    preserve_yaml: TRUE
+permalink: /publications/
+layout: page
+---
+
+```{r, echo=FALSE}
+library(bibtex)
+```
+
+```{r, echo=FALSE, results='asis'}
+bib <- read.bib("bib.bib")
+bib <- bib[order(stringr::str_extract(names(bib), "[0-9]{4}"), decreasing = TRUE)]
+print(bib, style = "html")
+```
+

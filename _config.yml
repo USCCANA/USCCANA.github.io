@@ -10,4 +10,4 @@ github_username:  USCCANA
 
 # Build settings
 markdown: kramdown
-exclude: [about.md]
+exclude: [about.md, bib.Rmd, bib.html, bib.bib]
